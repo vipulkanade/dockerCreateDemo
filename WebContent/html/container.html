@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="demoApp">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="../js/container.js"></script>
+<title>Container Create Application</title>
+</head>
+<body>
+	<h1>Docker API Test</h1>
+	<h2>Welcome!</h2>
+	<div ng-controller="SimpleController">
+		Name of Container: <input type="text" ng-model="name" value="1" /> <br />
+		
+		<div>
+			<br />
+			<button type="button" ng-model="submit" ng-click="display()">Submit</button>
+			<br />
+			
+			<br /><h1>Response : {{answer}}</h1>
+		</div>
+	</div>
+</body>
+</html>
